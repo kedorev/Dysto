@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Bataille navalle</title>
+        <script type="application/javascript" src="JS/externalLib/jquery-3.1.1.min.js"></script>
+        <script type="application/javascript" src="JS/externalLib/jCanvas.js"></script>
+        <script
+                src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                crossorigin="anonymous"></script>
+        <script type="application/javascript" src="JS/main.js"></script>
+        <script type="application/javascript" src="JS/faction.js"></script>
+        <script type="application/javascript" src="JS/Boat.js"></script>
+        <script type="application/javascript" src="JS/Player.js"></script>
+        <script type="application/javascript" src="JS/Weapon.js"></script>
+        <script type="application/javascript" src="JS/Map.js"></script>-
+
+        <script type="application/javascript" src="JS/Faction/EoBS.js"></script>
+        <script type="application/javascript" src="JS/Faction/Prussian.js"></script>
+
+
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    </head>
+
+    <body class="container" id="body">
+        <div class="areaPlayer" id="AreaPlayer1">
+            <div class="dataPlayer" id="dataPlayer1">
+
+            </div>
+            <div id="factionBoatListP1">
+                <SELECT class="civPlayer" id="civPlayer1" name="civPlayer1" size="1">
+                    <OPTION value="EoBS">EoBS
+                    <OPTION value="Prussian">Prussian
+                </SELECT>
+            </div>
+
+        </div>
+        <div class="" id="battle">
+            <div>
+                <H2><span id="turn">Déploiement</span><span id="nbTurn"></span></H2>
+                <div>
+                    <button id="btnStart">Start Game</button>
+                </div>
+                <div>
+                    <label class="switch">
+                        left<input type="checkbox" id="turnRight">right
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </div>
+
+            <canvas id="canvas" width="800px" height="600px">
+
+            </canvas>
+        </div>
+        <div class="areaPlayer" id="AreaPlayer2">
+            <div class="dataPlayer" id="dataPlayer2">
+
+            </div>
+            <div id="factionBoatListP2">
+                <SELECT class="civPlayer" id="civPlayer2" name="civPlayer2" size="1">
+
+                </SELECT>
+            </div>
+        </div>
+    </body>
+</html>
